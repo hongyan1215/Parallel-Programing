@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# CUDA build
+*.o
+*.obj
+*.exp
+*.lib
+.ninja_*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

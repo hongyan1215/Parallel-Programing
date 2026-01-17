@@ -1,0 +1,148 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "cuda_version": "12.8",
+  "pytorch_version": "2.8.0+cu128",
+  "timestamp": "2025-12-07T09:41:02.620676",
+  "summary": {
+    "avg_speedup": 75.11662781169748,
+    "min_speedup": 23.823646189794157,
+    "max_speedup": 199.454263723115
+  },
+  "results": [
+    {
+      "name": "GPT-2 single",
+      "batch_size": 1,
+      "spec_len": 8,
+      "vocab_size": 50257,
+      "original_ms": 1.0063359832763672,
+      "v2_ms": 0.025559840202331544,
+      "speedup": 39.37176348952957
+    },
+    {
+      "name": "GPT-2 batch-8",
+      "batch_size": 8,
+      "spec_len": 8,
+      "vocab_size": 50257,
+      "original_ms": 1.2761804962158203,
+      "v2_ms": 0.02554800033569336,
+      "speedup": 49.95226551773823
+    },
+    {
+      "name": "GPT-2 batch-32",
+      "batch_size": 32,
+      "spec_len": 8,
+      "vocab_size": 50257,
+      "original_ms": 1.5130963134765625,
+      "v2_ms": 0.025563840866088868,
+      "speedup": 59.18892710225426
+    },
+    {
+      "name": "TinyLlama single",
+      "batch_size": 1,
+      "spec_len": 8,
+      "vocab_size": 32000,
+      "original_ms": 0.6148863983154297,
+      "v2_ms": 0.02580991983413696,
+      "speedup": 23.823646189794157
+    },
+    {
+      "name": "TinyLlama batch-8",
+      "batch_size": 8,
+      "spec_len": 8,
+      "vocab_size": 32000,
+      "original_ms": 0.7135129547119141,
+      "v2_ms": 0.025604000091552736,
+      "speedup": 27.867245436673628
+    },
+    {
+      "name": "TinyLlama batch-32",
+      "batch_size": 32,
+      "spec_len": 8,
+      "vocab_size": 32000,
+      "original_ms": 1.2917503356933593,
+      "v2_ms": 0.026347360610961913,
+      "speedup": 49.02769407406684
+    },
+    {
+      "name": "Llama-3 single",
+      "batch_size": 1,
+      "spec_len": 8,
+      "vocab_size": 128256,
+      "original_ms": 2.4354388427734377,
+      "v2_ms": 0.026023359298706056,
+      "speedup": 93.58664324688218
+    },
+    {
+      "name": "Llama-3 batch-8",
+      "batch_size": 8,
+      "spec_len": 8,
+      "vocab_size": 128256,
+      "original_ms": 2.8288870239257813,
+      "v2_ms": 0.02696095943450928,
+      "speedup": 104.92530990217227
+    },
+    {
+      "name": "Llama-3 batch-32",
+      "batch_size": 32,
+      "spec_len": 8,
+      "vocab_size": 128256,
+      "original_ms": 5.231630859375,
+      "v2_ms": 0.027754719257354735,
+      "speedup": 188.4951820576844
+    },
+    {
+      "name": "Qwen2.5 single",
+      "batch_size": 1,
+      "spec_len": 8,
+      "vocab_size": 151936,
+      "original_ms": 2.885713806152344,
+      "v2_ms": 0.02917311906814575,
+      "speedup": 98.916876163004
+    },
+    {
+      "name": "Qwen2.5 batch-8",
+      "batch_size": 8,
+      "spec_len": 8,
+      "vocab_size": 151936,
+      "original_ms": 3.3477734375,
+      "v2_ms": 0.029945600032806396,
+      "speedup": 111.79516970213999
+    },
+    {
+      "name": "Qwen2.5 batch-32",
+      "batch_size": 32,
+      "spec_len": 8,
+      "vocab_size": 151936,
+      "original_ms": 6.114821166992187,
+      "v2_ms": 0.030657761096954346,
+      "speedup": 199.454263723115
+    },
+    {
+      "name": "short spec-4",
+      "batch_size": 8,
+      "spec_len": 4,
+      "vocab_size": 32000,
+      "original_ms": 0.6621132659912109,
+      "v2_ms": 0.025708160400390624,
+      "speedup": 25.754984241546524
+    },
+    {
+      "name": "long spec-12",
+      "batch_size": 8,
+      "spec_len": 12,
+      "vocab_size": 32000,
+      "original_ms": 0.7114649963378906,
+      "v2_ms": 0.025579519271850586,
+      "speedup": 27.813853293202204
+    },
+    {
+      "name": "very long spec-16",
+      "batch_size": 8,
+      "spec_len": 16,
+      "vocab_size": 32000,
+      "original_ms": 0.715709457397461,
+      "v2_ms": 0.02672991991043091,
+      "speedup": 26.77559303565916
+    }
+  ]
+}
